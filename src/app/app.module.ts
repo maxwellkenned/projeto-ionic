@@ -8,6 +8,9 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { IntroPageModule } from '../pages/intro/intro.module';
+import { IntroPage } from '../pages/intro/intro';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -25,7 +28,8 @@ import { UsersProvider } from '../providers/users/users';
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
-    CardPageModule
+    CardPageModule,
+    IntroPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
